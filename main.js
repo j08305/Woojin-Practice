@@ -4,8 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const generateBtn = document.getElementById('generate-btn');
 
     generateBtn.addEventListener('click', () => {
-        const numbers = generateLottoNumbers();
-        displayLottoNumbers(numbers);
+        lottoNumbersContainer.innerHTML = '';
+        for (let i = 0; i < 3; i++) {
+            const numbers = generateLottoNumbers();
+            const row = document.createElement('div');
+            row.classList.add('lotto-row');
+            displayLottoNumbers(numbers, row);
+            lottoNumbersContainer.appendChild(row);
+        }
     });
 
     function generateLottoNumbers() {
@@ -17,14 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
         return Array.from(numbers).sort((a, b) => a - b);
     }
 
-    function displayLottoNumbers(numbers) {
-        lottoNumbersContainer.innerHTML = '';
+    function displayLottoNumbers(numbers, container) {
         for (const number of numbers) {
             const ball = document.createElement('div');
             ball.classList.add('ball');
             ball.textContent = number;
             ball.style.backgroundColor = getBallColor(number);
-            lottoNumbersContainer.appendChild(ball);
+            container.appendChild(ball);
         }
     }
 
