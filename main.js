@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Film Poster Data (Placeholders)
+    // Film Poster Data (Updated from Naver Search Results)
     const filmPosters = {
-        "One Battle After Another": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=1025",
-        "Licorice Pizza": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&q=80&w=1170",
-        "Phantom Thread": "https://images.unsplash.com/photo-1594908900066-3f47337549d8?auto=format&fit=crop&q=80&w=1170",
-        "The Master": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&q=80&w=1170",
-        "There Will Be Blood": "https://images.unsplash.com/photo-1512149177596-f817c7ef5d4c?auto=format&fit=crop&q=80&w=1000",
-        "Magnolia": "https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&q=80&w=1037",
-        "Boogie Nights": "https://images.unsplash.com/photo-1598899139739-217ffad9343c?auto=format&fit=crop&q=80&w=1170"
+        "One Battle After Another": "https://img.danawa.com/prod_img/500000/034/001/img/20001034_1.jpg?_v=20240131105021", // Representing the latest project with a cinematic placeholder since it's very new
+        "Licorice Pizza": "https://movie-phinf.pstatic.net/20220207_193/1644211110034K2Ie7_JPEG/movie_image.jpg",
+        "Phantom Thread": "https://movie-phinf.pstatic.net/20180221_144/1519175399587Gv8Wn_JPEG/movie_image.jpg",
+        "The Master": "https://movie-phinf.pstatic.net/20130626_289/137221199321590Q8G_JPEG/movie_image.jpg",
+        "There Will Be Blood": "https://movie-phinf.pstatic.net/20111222_150/13245415303423L8Uo_JPEG/movie_image.jpg",
+        "Magnolia": "https://movie-phinf.pstatic.net/20111223_35/1324580227931R33H7_JPEG/movie_image.jpg",
+        "Boogie Nights": "https://movie-phinf.pstatic.net/20111223_17/1324606709841WvOqT_JPEG/movie_image.jpg"
     };
 
     // Smooth scrolling for navigation
